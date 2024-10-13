@@ -10,5 +10,5 @@ buttonElement.addEventListener('mouseenter', moveButton = () => {
 const yesButton = document.getElementById("yes-button");
 
 yesButton.addEventListener("click", () => {
-    alert("YOU SAID YES, NOW GO AND SAY IT TO HIM!");
+    alert("SABI NA YES EH AHAHAAHAH, NOW GO AND SAY IT TO HIM!");
 });
