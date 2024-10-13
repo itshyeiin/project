@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -12,19 +12,20 @@ body, html {
   align-items: center;
 }
 
-.card{
+.card {
   border: 2px solid black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10rem;
+  padding: 5rem;
+  max-width: 90vw; /* Ensure it doesn't get too wide */
+  width: 100%;
 }
 
-.card-message{
+.card-message {
   text-align: center;
-  /* text-align: justify; */
   padding-bottom: 1rem;
 }
 
@@ -71,4 +72,58 @@ body, html {
   top: 3px;
   left: 6px;
   height: 100%;
+}
+
+/* Media Queries for responsiveness */
+
+/* For small screens (mobile) */
+@media (max-width: 480px) {
+  .card {
+    padding: 3rem; /* Reduced padding */
+  }
+
+  .crazy-button,
+  .not-crazy-button {
+    padding: 12px 20px; /* Smaller buttons */
+    font-size: 14px; /* Smaller font size */
+    margin-right: 10px; /* Adjust margin */
+  }
+
+  .card-message {
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+  .card {
+    padding: 4rem; /* Reduced padding */
+  }
+
+  .crazy-button,
+  .not-crazy-button {
+    padding: 14px 25px; /* Adjust button size */
+    font-size: 15px; /* Adjust font size */
+  }
+
+  .card-message {
+    padding-bottom: 1rem;
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1024px) {
+  .card {
+    padding: 6rem; /* Larger padding */
+  }
+
+  .crazy-button,
+  .not-crazy-button {
+    padding: 16px 30px; /* Larger buttons */
+    font-size: 18px; /* Larger font size */
+  }
+
+  .card-message {
+    padding-bottom: 1rem;
+  }
 }
