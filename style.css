@@ -14,11 +14,18 @@ body, html {
 
 .card{
   border: 2px solid black;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10rem;
+}
+
+.card-message{
+  text-align: center;
+  /* text-align: justify; */
+  padding-bottom: 1rem;
 }
 
 .crazy-button,
