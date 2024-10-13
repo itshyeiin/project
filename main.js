@@ -7,3 +7,8 @@ buttonElement.addEventListener('mouseenter', moveButton = () => {
   buttonElement.style.left = offsetLeft + 'px';
 });
 
+const yesButton = document.getElementById("yes-button");
+
+yesButton.addEventListener("click", () => {
+    alert("YOU SAID YES, NOW GO AND SAY IT TO HIM!");
+});
